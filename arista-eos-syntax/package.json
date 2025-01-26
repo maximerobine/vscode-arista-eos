@@ -1,0 +1,29 @@
+{
+  "name": "arista-eos-syntax",
+  "displayName": "Arista EOS Syntax",
+  "description": "Syntax highlighting for Arista EOS configuration files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "eos",
+        "aliases": ["Arista EOS", "eos"],
+        "extensions": [".eos"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "eos",
+        "scopeName": "source.eos",
+        "path": "./syntaxes/.tmLanguage.json"
+      }
+    ]
+  }
+}
