@@ -156,6 +156,9 @@
 				},
 				{
 					"include": "#management"
+				},
+				{
+					"include": "#vxlan"
 				}
 			],
 			"repository": {
@@ -218,6 +221,10 @@
 				"management": {
 					"name": "entity.name.class.interface.management.eos",
 					"match": "\\b(Management|[Mm]gmt)((\\d+[\\./])*)?(\\d+)?\\b"
+				},
+				"vxlan": {
+					"name": "entity.name.class.interface.vxlan.eos",
+					"match": "\\b(VXLAN|[Vv]xlan)1\\b"
 				}
 			}
 		},
